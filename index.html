@@ -103,7 +103,7 @@ map.on('load', function() {
 
     // define layer names
     var layers = ['0-10', '10-20', '20-50', '50-100', '100-200', '200-500', '500-1000', '1000+'];
-    var colors = ['hsl(250, 4%, 98%)', 'hsl(250, 32%, 84%)', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
+    var colors = ['hsl(250, 4%, 98%)', 'hsl(250, 32%, 84%)', 'hsl(250, 82%, 74%)', 'hsl(250, 78%, 64%)', 'hsl(250, 75%, 51%)', 'hsl(250, 93%, 26%)', 'hsl(250, 89%, 13%)', '#800026'];
 
 for (i=0; i<layers.length; i++) {
         var layer = layers[i];
@@ -123,7 +123,7 @@ for (i=0; i<layers.length; i++) {
     // change info window on hover
     map.on('mousemove', function (e) {
         var states = map.queryRenderedFeatures(e.point, {
-            layers: ['statedata']
+            layers: ['statedata-2-4kd50c']
         });
 
         if (states.length > 0) {
@@ -134,7 +134,6 @@ for (i=0; i<layers.length; i++) {
     });
 
 });
-
 
 </script>
 </body>
